@@ -31,8 +31,8 @@ from .query_integral_image import query_integral_image
 from .tokenization import unigrams_and_bigrams, process_tokens
 
 FILE = os.path.dirname(__file__)
-FONT_PATH = os.environ.get('FONT_PATH', os.path.join(FILE, 'DroidSansMono.ttf'))
-STOPWORDS = set(map(str.strip, open(os.path.join(FILE, 'stopwords')).readlines()))
+FONT_PATH = None
+STOPWORDS = None
 
 
 class IntegralOccupancyMap(object):
